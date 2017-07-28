@@ -22,6 +22,9 @@ public class AppTest extends AbstractTestNGSpringContextTests {
 
     @Autowired
     private Knight knight;
+    @Autowired
+    private Arms arms;
+
 
     @Test
     public void testredKnightNotNull() throws Exception {
@@ -31,4 +34,8 @@ public class AppTest extends AbstractTestNGSpringContextTests {
         knight.fight();
     }
 
+    @Test
+    public void testArmsNotNull() throws Exception {
+        Assert.assertNotNull(arms);
+    }
 }
