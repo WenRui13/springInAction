@@ -1,6 +1,7 @@
 package com.jd.pop.qa.study;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Required;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
@@ -29,6 +30,7 @@ public class RedKnight implements Knight {
     }
 
     @Autowired
+    @Qualifier("sword")
     public void setArms(Arms arms) {
         this.arms = arms;
     }

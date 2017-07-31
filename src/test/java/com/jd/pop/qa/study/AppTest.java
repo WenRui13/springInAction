@@ -1,8 +1,8 @@
 package com.jd.pop.qa.study;
 
 import com.jd.pop.qa.study.config.AppConfig;
-import com.jd.pop.qa.study.config.AppConfigNew;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.testng.AbstractTestNGSpringContextTests;
 import org.testng.Assert;
@@ -17,12 +17,13 @@ import org.testng.annotations.Test;
  */
 
 
-@ContextConfiguration(classes = {AppConfigNew.class})
+@ContextConfiguration(classes = {AppConfig.class})
 public class AppTest extends AbstractTestNGSpringContextTests {
 
     @Autowired
     private Knight knight;
     @Autowired
+    @Qualifier("gun")
     private Arms arms;
 
 
@@ -37,5 +38,6 @@ public class AppTest extends AbstractTestNGSpringContextTests {
     @Test
     public void testArmsNotNull() throws Exception {
         Assert.assertNotNull(arms);
+        arms.fight();
     }
 }
