@@ -1,8 +1,9 @@
-package com.jd.pop.qa.study;
+package com.jd.pop.qa.study.iml;
 
+import com.jd.pop.qa.study.api.Arms;
+import com.jd.pop.qa.study.api.Knight;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.beans.factory.annotation.Required;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 

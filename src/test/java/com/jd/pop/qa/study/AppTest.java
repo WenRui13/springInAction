@@ -1,5 +1,7 @@
 package com.jd.pop.qa.study;
 
+import com.jd.pop.qa.study.api.Arms;
+import com.jd.pop.qa.study.api.Knight;
 import com.jd.pop.qa.study.config.AppConfig;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;

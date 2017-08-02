@@ -1,4 +1,4 @@
-package com.jd.pop.qa.study;
+package com.jd.pop.qa.study.api;
 
 /**
  * @FunctionDesc
@@ -7,7 +7,6 @@ package com.jd.pop.qa.study;
  * @Reviewer kongxiangyun
  * @ReviewDate 2017/7/28
  */
-public interface Knight {
+public interface Arms {
     public void fight();
-
 }

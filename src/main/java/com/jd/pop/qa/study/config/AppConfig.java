@@ -1,7 +1,5 @@
 package com.jd.pop.qa.study.config;
 
-import com.jd.pop.qa.study.RedKnight;
-import com.jd.pop.qa.study.Sword;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
