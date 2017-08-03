@@ -1,12 +1,12 @@
 package com.jd.pop.qa.study.config;
 
 import com.jd.pop.qa.study.api.Arms;
+import com.jd.pop.qa.study.api.Dessert;
 import com.jd.pop.qa.study.api.Knight;
-import com.jd.pop.qa.study.iml.Gun;
-import com.jd.pop.qa.study.iml.RedKnight;
-import com.jd.pop.qa.study.iml.Sword;
+import com.jd.pop.qa.study.iml.*;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Primary;
 import org.springframework.context.annotation.Profile;
 
 /**
@@ -36,4 +36,5 @@ public class AppConfigNew {
     public Arms gun() {
         return new Gun();
     }
+
 }

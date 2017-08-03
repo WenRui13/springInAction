@@ -10,7 +10,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 /**
- * @FunctionDesc 条件化bean测试
+ * @FunctionDesc 条件化bean测试 see p75
  * @Author bjyfxuxiaojun
  * @CreateDate 2017/8/2
  * @Reviewer kongxiangyun
@@ -19,7 +19,6 @@ import org.testng.annotations.Test;
 @ContextConfiguration(classes = {AppConfigNew.class})
 @ActiveProfiles("qa")
 public class BeanProfileTest extends AbstractTestNGSpringContextTests {
-
     @Autowired
     private Arms arms;
 
