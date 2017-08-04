@@ -1,5 +1,7 @@
 package com.jd.pop.qa.study.api;
 
+import com.jd.pop.qa.study.annotations.dessertDescription.Cold;
+import com.jd.pop.qa.study.annotations.dessertDescription.Milk;
 import com.jd.pop.qa.study.config.AppConfig;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
@@ -19,11 +21,22 @@ import org.testng.annotations.Test;
 public class DessertTest extends AbstractTestNGSpringContextTests {
 
     @Autowired
+    @Cold
+    @Milk
     private Dessert dessert;
 
-    @Test
+    @Test(description = "@Qualifier优先级高于@Primary")
     public void testPrimary_1() throws Exception {
         System.out.println(dessert.getClass().getName());
-        Assert.assertEquals(dessert.getClass().getName(), "com.jd.pop.qa.study.iml.Cake");
+        Assert.assertNotEquals(dessert.getClass().getName(), "com.jd.pop.qa.study.iml.Cake");
     }
+
+
+    @Test
+    public void testQualifierBySelfDefined() throws Exception {
+        System.out.println(dessert.getClass().getName());
+
+    }
+
+
 }

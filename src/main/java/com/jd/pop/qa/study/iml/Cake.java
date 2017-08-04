@@ -1,5 +1,7 @@
 package com.jd.pop.qa.study.iml;
 
+import com.jd.pop.qa.study.annotations.dessertDescription.Milk;
+import com.jd.pop.qa.study.annotations.dessertDescription.Soft;
 import com.jd.pop.qa.study.api.Dessert;
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
@@ -13,6 +15,8 @@ import org.springframework.stereotype.Component;
  */
 
 @Component
+@Soft
+@Milk
 @Primary
 public class Cake implements Dessert {
 }
